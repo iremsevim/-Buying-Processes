@@ -1,28 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameElement.UI;
 
-public class UIManager : Singleton<UIManager>
+public class UIManager : MonoBehaviour
 {
-    public Transform purchaseItemCarrier;
+    public Transform buyCarItemCarrier;
 
-    private void Start()
+   public void LoadBuyCarData() 
     {
-        LoadPurchasableItem();
-    }
-    public void LoadPurchasableItem()
-    {
-        foreach (Transform item in purchaseItemCarrier)
+        foreach (Transform item in buyCarItemCarrier)
         {
             Destroy(item.gameObject);
         }
-        foreach (var item in GameData.instance.purchasableItemProfiles)
+
+        foreach (var item in GameData.instance.carProfiles)
         {
-         GameObject purchaseItem=Instantiate(GameData.instance.purchaseItemPrefab, purchaseItemCarrier);
-           if(purchaseItem.TryGetComponent(out PurchasableItem purchasable))
-            {
-                purchasable.UpdateItem(item);
-            }
+            var createdCar = Instantiate(GameData.instance.uiItems.uiBuyCarItemPrefab, buyCarItemCarrier);
+            if (createdCar.TryGetComponent(out BuyCarItem buyCarItem))
+                buyCarItem.SetData(item);
+            
         }
     }
 }

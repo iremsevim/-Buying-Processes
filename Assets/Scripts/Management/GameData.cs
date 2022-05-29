@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class GameData : Singleton<GameData>
 {
-    public List<PurchasableItemProfile> purchasableItemProfiles;
-    public GameObject purchaseItemPrefab;
+    public List<CarProfileSO> carProfiles;
+    public UI uiItems;
 
     [System.Serializable]
-    public struct PurchasableItemProfile
+    public struct UI 
     {
-        public Color32 color;
-        public string colorName;
-        public bool lockStatus;
+        public GameObject uiBuyCarItemPrefab;
     }
+
 }
