@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4627e70ee871572459b8ab62b5ae9613, type: 3}
   m_Name: Renoault
   m_EditorClassIdentifier: 
+  CarID: olop98
   CarName: Renault Clio
   carIcon: {fileID: 21300000, guid: 02dadaaf19c67e043aad61c5328946a9, type: 3}
-  CarPrefab: {fileID: 0}
+  CarPrefab: {fileID: 6318980105733342140, guid: b2d1ab1b905ccc547a9e48816437506f, type: 3}
   Price: 750

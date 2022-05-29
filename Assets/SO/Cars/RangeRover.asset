@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4627e70ee871572459b8ab62b5ae9613, type: 3}
   m_Name: RangeRover
   m_EditorClassIdentifier: 
+  CarID: 6uyhj
   CarName: Land Cruser
   carIcon: {fileID: 21300000, guid: cd238c76328efc04a9622db76627cdda, type: 3}
-  CarPrefab: {fileID: 0}
+  CarPrefab: {fileID: 3208255286251125192, guid: e8873b3039f35b34cae07f468f8704c9, type: 3}
   Price: 1200

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4627e70ee871572459b8ab62b5ae9613, type: 3}
   m_Name: i20
   m_EditorClassIdentifier: 
+  CarID: v345
   CarName: Hyundai i20
   carIcon: {fileID: 21300000, guid: d91b40cf62ded8e48a5dcfe1484398de, type: 3}
-  CarPrefab: {fileID: 0}
+  CarPrefab: {fileID: 6390038702352551591, guid: c534ad172311e274ea4a78820d1ac639, type: 3}
   Price: 100

@@ -8,12 +8,24 @@ namespace GameElement.UI
     public class BuyCarItem : MonoBehaviour
     {
         public Image carIcon;
+        [HideInInspector()]
+        public CarProfileSO Represented;
+        public Image focusImage;
 
         public void SetData(CarProfileSO carProfileSO) 
         {
+            Represented = carProfileSO;
             carIcon.sprite = carProfileSO.carIcon;
-           // carName.text = carProfileSO.CarName;
-          //  carPrice.text= string.Format("Price : {0:C}", carProfileSO.Price);
+        }
+
+        public void OnClick() 
+        {
+            Events.onBuyMenuCarSelected?.Invoke(Represented);
+        }
+
+        public void ChangeFocusImage(bool status) 
+        {
+            focusImage.color = status ? GameData.instance.uiItems.buyCaritemFocusColor : GameData.instance.uiItems.buyCaritemNormalColor;
         }
 
     }

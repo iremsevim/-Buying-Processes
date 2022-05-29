@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4627e70ee871572459b8ab62b5ae9613, type: 3}
   m_Name: Mercedes
   m_EditorClassIdentifier: 
+  CarID: gf46
   CarName: Mercedes A200
   carIcon: {fileID: 21300000, guid: 9dd3cc9f185ea2e488d45a1c35c65df4, type: 3}
-  CarPrefab: {fileID: 0}
+  CarPrefab: {fileID: 8136249558827426905, guid: cdd2e37d975f0cd4394d9ebeb65513f7, type: 3}
   Price: 1000

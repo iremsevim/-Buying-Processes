@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4627e70ee871572459b8ab62b5ae9613, type: 3}
   m_Name: Skoda
   m_EditorClassIdentifier: 
+  CarID: 5t7hhrt
   CarName: Skoda
   carIcon: {fileID: 21300000, guid: faa200e5480f49a418068897bec43638, type: 3}
-  CarPrefab: {fileID: 0}
+  CarPrefab: {fileID: 1982832289965440216, guid: 44c33103a09afb144b4c7543a12785dc, type: 3}
   Price: 1400

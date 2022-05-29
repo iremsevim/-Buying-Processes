@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4627e70ee871572459b8ab62b5ae9613, type: 3}
   m_Name: Audi
   m_EditorClassIdentifier: 
+  CarID: a233
   CarName: A6
   carIcon: {fileID: 21300000, guid: 35a3d7257af277e4aa121c83ffe7c052, type: 3}
-  CarPrefab: {fileID: 0}
+  CarPrefab: {fileID: 8762655704872939474, guid: c30b1958c8ad2384b8ea4d2ccc009b32, type: 3}
   Price: 4000
